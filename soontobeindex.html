@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My iOS Apps Showcase</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: #8E8D8A;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #EAE7DC;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        h1 {
+            color: #E85A4F;
+            font-size: 2.5em;
+        }
+        .app-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .app-card {
+            background-color: #D8C3A5;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .app-card:hover {
+            transform: translateY(-5px);
+        }
+        .app-icon {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .app-info {
+            padding: 20px;
+        }
+        .app-name {
+            font-size: 1.5em;
+            margin: 0 0 10px;
+            color: #E85A4F;
+        }
+        .app-description {
+            font-size: 1em;
+            color: #8E8D8A;
+            margin-bottom: 15px;
+        }
+        .app-link {
+            display: inline-block;
+            background-color: #E98074;
+            color: #EAE7DC;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: background-color 0.3s ease;
+        }
+        .app-link:hover {
+            background-color: #E85A4F;
+        }
+        @media (max-width: 768px) {
+            .app-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My iOS App Showcase</h1>
+    </header>
+    <main class="app-grid">
+        <div class="app-card">
+            <img src="/placeholder.svg?height=200&width=300" alt="App 1 Icon" class="app-icon">
+            <div class="app-info">
+                <h2 class="app-name">Awesome App 1</h2>
+                <p class="app-description">This is a brief description of your first awesome iOS app. Highlight its key features and benefits.</p>
+                <a href="#" class="app-link">View on App Store</a>
+            </div>
+        </div>
+        <div class="app-card">
+            <img src="/placeholder.svg?height=200&width=300" alt="App 2 Icon" class="app-icon">
+            <div class="app-info">
+                <h2 class="app-name">Fantastic App 2</h2>
+                <p class="app-description">Describe your second fantastic iOS app here. What makes it unique and why should users download it?</p>
+                <a href="#" class="app-link">View on App Store</a>
+            </div>
+        </div>
+        <div class="app-card">
+            <img src="/placeholder.svg?height=200&width=300" alt="App 3 Icon" class="app-icon">
+            <div class="app-info">
+                <h2 class="app-name">Amazing App 3</h2>
+                <p class="app-description">Tell visitors about your third amazing iOS app. What problem does it solve or what entertainment does it provide?</p>
+                <a href="#" class="app-link">View on App Store</a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
