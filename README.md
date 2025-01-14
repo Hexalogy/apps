@@ -1,1 +1,1 @@
-These files are used to satisfly the agreements that App Store Connect asks
+These files are used to satisfy the agreements that App Store Connect asks
